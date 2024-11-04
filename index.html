@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baza.prod - Студія звукозапису</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="baza.prod logo" class="logo">
+            <h1 class="gradient-text">baza.prod</h1>
+            <p class="studio-info">
+                Студія звукозапису<br>
+                м. Львів, вул. Жовківська 25<br>
+                Запис, зведення, мастеринг.<br>
+                inst: @baza.prod.032
+            </p>
+        </header>
+
+        <form action="https://formspree.io/f/mwpklnlp" method="POST" class="booking-form">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Дата запису:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Час запису:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="phone">Номер телефону:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Записатись</button>
+        </form>
+    </div>
+</body>
+</html>
