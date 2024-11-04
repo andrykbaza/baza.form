@@ -25,6 +25,8 @@ body {
 .logo {
     display: block;
     margin: 0 auto 10px;
+    max-width: 100px; /* Ви можете налаштувати це значення для ідеального розміру */
+    height: auto;
 }
 
 .gradient-text {
