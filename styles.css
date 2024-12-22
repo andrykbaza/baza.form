@@ -4,15 +4,17 @@ body {
     margin: 0;
     padding: 0;
     background: url('DSC00054.JPG') no-repeat center center/cover;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 .form-container {
     max-width: 600px;
     margin: 50px auto;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(30, 30, 30, 0.95);
     border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     text-align: center;
     position: relative;
 }
@@ -53,13 +55,15 @@ body {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .form-group input, .form-group select, .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
+    background: #1e1e1e;
+    color: #e0e0e0;
     border-radius: 8px;
     font-size: 14px;
 }
@@ -88,10 +92,16 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    color: #e0e0e0;
 }
 
 .form-group.services input[type="checkbox"] {
     cursor: pointer;
+}
+
+.form-group.services select[multiple] {
+    height: auto;
+    padding: 10px;
 }
 
 /* Кнопка надсилання */
