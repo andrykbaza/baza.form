@@ -84,7 +84,7 @@ body {
 /* Блок для вибору додаткових послуг */
 .form-group.services {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -97,11 +97,6 @@ body {
 
 .form-group.services input[type="checkbox"] {
     cursor: pointer;
-}
-
-.form-group.services select[multiple] {
-    height: auto;
-    padding: 10px;
 }
 
 /* Кнопка надсилання */
