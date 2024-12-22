@@ -1,75 +1,76 @@
-* {
+/* Загальні стилі */
+body {
+    font-family: 'Balsamiq Sans', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background: url('DSC00054.JPG') no-repeat center center/cover;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: url('DSC00054.JPG') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    background-color: rgba(255, 255, 255, 0.8);
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    max-width: 400px;
-    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    display: block;
-    margin: 0 auto 10px;
-    max-width: 100px; /* Ви можете налаштувати це значення для ідеального розміру */
-    height: auto;
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.gradient-text {
-    background: linear-gradient(45deg, #7f00ff, #e100ff);
+.form-header h1 {
+    font-size: 28px;
+    color: #6a0dad;
+    background: linear-gradient(90deg, #6a0dad, #b565d9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
-.studio-info {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.1rem;
+/* Стилі для полів форми */
+.form-group {
+    margin-bottom: 15px;
 }
 
-.booking-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.booking-form label {
+.form-group label {
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.booking-form input {
-    margin-bottom: 15px;
+.form-group input, .form-group select {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 14px;
 }
 
-button {
-    background-color: #7f00ff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+.form-group select {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #5900b3;
+.form-group input[type="date"], .form-group input[type="time"] {
+    cursor: pointer;
+}
+
+/* Кнопка надсилання */
+.form-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-button button {
+    background: linear-gradient(90deg, #6a0dad, #b565d9);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-button button:hover {
+    background: linear-gradient(90deg, #b565d9, #6a0dad);
 }
