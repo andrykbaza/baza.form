@@ -32,15 +32,19 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            <div class="form-group">
-                <label for="service">Оберіть послугу</label>
-                <select id="service" name="service" required>
-                    <option value="">-- Виберіть послугу --</option>
-                    <option value="recording">Запис</option>
-                    <option value="mixing">Зведення (Mixing)</option>
-                    <option value="mastering">Мастеринг (Mastering)</option>
-                </select>
-            </div>
+           <div class="form-group services">
+    <label>Оберіть послуги:</label>
+    <label>
+        <input type="checkbox" name="services[]" value="recording"> Запис
+    </label>
+    <label>
+        <input type="checkbox" name="services[]" value="mixing"> Зведення (Mixing)
+    </label>
+    <label>
+        <input type="checkbox" name="services[]" value="mastering"> Мастеринг (Mastering)
+    </label>
+</div>
+
             <div class="form-button">
                 <button type="submit">Забронювати</button>
             </div>
