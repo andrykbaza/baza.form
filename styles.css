@@ -83,20 +83,32 @@ body {
 
 /* Блок для вибору додаткових послуг */
 .form-group.services {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
 }
 
 .form-group.services label {
     display: flex;
     align-items: center;
-    gap: 8px;
-    color: #e0e0e0;
+    gap: 10px;
+    padding: 10px;
+    background: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-group.services label:hover {
+    background: #2a2a2a;
 }
 
 .form-group.services input[type="checkbox"] {
+    margin: 0;
     cursor: pointer;
+    accent-color: #6a0dad;
 }
 
 /* Кнопка надсилання */
